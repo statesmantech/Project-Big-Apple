@@ -2667,6 +2667,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/dist": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/dist\/dist",
+		"oF": 0
+		},
 	"\/docs\/commands.md": {
 		"cS": 0,
 		"eF": 1,
@@ -2827,7 +2833,7 @@
 	"displayValue": "Project Big Apple",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/app\/images\/touch\/icon-128x128.png",
-	"lastBuiltDate": 501572168
+	"lastBuiltDate": 501575697
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
