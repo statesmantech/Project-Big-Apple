@@ -48,7 +48,7 @@ material.red-teal.min.css
 material.blue-orange.min.css
 material.purple-indigo.min.css
 -->
-<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-red.min.css">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-green.min.css">
 <link rel="stylesheet" href="./styles/custom.css">
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
@@ -59,10 +59,10 @@ material.purple-indigo.min.css
 <body>
     <!-- Add your site or app content here -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
+        <header class="mdl-layout__header  mdl-shadow--12dp  mdl-color--red-600">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Big Apple Automotive Team Dashboard</span>
+                <span class="mdl-layout-title">Team Big Apple Auto: Dashboard</span>
             </div>
             <!-- Tabs -->
             <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
@@ -100,85 +100,88 @@ material.purple-indigo.min.css
                 <a class="mdl-navigation__link" href=""><i class="material-icons md-dark md-48" role="presentation">help_outline</i><span>Help</span></a>
             </nav>
         </div>
-        <main class="mdl-layout__content">
+        <main class="mdl-layout__content mdl-color--white">
             <!-- Tab 1 -->
             <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
                 <div class="page-content">
                     <div class="mdl-grid">
-                        <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--6dp">
-                                <div class="mdl-card__title mdl-color--red-500">
-                                    <h2 class="mdl-card__title-text"></h2>
-                                </div>
-                                <div class="mdl-card__supporting-text team-hello">Welcome! These are many of the online  resources our team uses on a daily basis. Click <a href="https://goo.gl/forms/PnJuDLbFavUgOg6h2" target="_blank">here</a> if you have any suggestions or face any technical difficulties.
+                        <div class="mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--6dp">
+                                <div class="mdl-card__supporting-text team-hello mdl-shadow-1dp">Welcome! These are many of the online  resources our team uses on a daily basis. Click <a class="mdl-color-text--black" href="https://goo.gl/forms/PnJuDLbFavUgOg6h2" target="_blank">here</a> if you have any suggestions or face any technical difficulties.
                                 </div>
                         </div>
-                        <div class="mdl-cell mdl-cell--6-col mdl-shadow--4dp">
-                    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-                      <div class="mdl-tabs__panel is-active" id="Month">
-                         <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23666666&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                    <div class="mdl-tabs__tab-bar mdl-color--white mdl-shadow--4dp">
+                          <a href="#Month" class="mdl-tabs__tab is-active">Month</a>
+                          <a href="#Week" class="mdl-tabs__tab">Week</a>
+                          <a href="#Agenda" class="mdl-tabs__tab">Agenda</a>
                       </div>
-                    <div class="mdl-tabs__panel" id="Week">
+                    <div class="mdl-grid">
+                      <div class="mdl-cell--12-col mdl-tabs__panel is-active mdl-shadow--4dp" id="Month">
+                                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23666666&amp;ctz=America%2FLos_Angeles" style="border-width:20" width="inherit" height="400" frameborder="0" scrolling="no"></iframe>
+                      </div>
+                    <div class="mdl-cell--12-col mdl-tabs__panel mdl-shadow--4dp" id="Week">
                         <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23666666&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-                      </div>
-                    <div class="mdl-tabs__panel" id="Agenda">
-                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23666666&amp;src=jfc%40bigappleautomotive.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-                      </div>
-                      <div class="mdl-tabs__tab-bar">
-                        <a href="#Month" class="mdl-tabs__tab is-active">Month</a>
-                        <a href="#Week" class="mdl-tabs__tab">Week</a>
-                        <a href="#Agenda" class="mdl-tabs__tab">Agenda</a>
-                      </div>
-                      </div>
+                    </div>
+                    <div class="mdl-cell--12-col mdl-tabs__panel mdl-shadow--4dp" id="Agenda">
+                                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23666666&amp;src=jfc%40bigappleautomotive.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
                   </div>
-<div class="mdl-cell mdl-cell--6-col mdl-shadow--4dp">
-<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
 
+              </div>
+          </div>
+  </div>
+<div class="mdl-cell mdl-cell--6-col">
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-tabs__tab-bar mdl-color--white mdl-shadow--4dp">
+      <a href="#Sell" class="mdl-tabs__tab is-active">Sell</a>
+      <a href="#Tech" class="mdl-tabs__tab">Tech</a>
+      <a href="#Admin" class="mdl-tabs__tab">Admin</a>
+    </div>
   <div class="mdl-tabs__panel is-active" id="Sell">
       <div class="mdl-grid">
           <!--NAPA-->
-          <div class="mdl-cell mdl-cell--media">
+          <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
               <a href="https://www.napaprolink.com/login" target="__blank">
                   <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/napa.png" alt="logo" width="100%"></a>
               </div>
-
               <!--AUTOZONE-->
-              <div class="mdl-cell mdl-cell__media">
+              <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
                   <a href="https://www.autozonepro.com/" target="_blank">
                       <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/autozone.png" alt="logo" width="100%"></a>
                   </div>
                   <!--Oreilly First Call-->
-                  <div class="mdl-cell mdl-cell__media">
+                  <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
                       <a href="https://fco.firstcallonline.com/FirstCallOnline" target="__blank">
                           <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/Oreilly.png" alt="O'reilly" width="100%"></a>
                       </div>
                       <!--National Tires-->
-                      <div class="mdl-cell mdl-cell__media">
+                      <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
                           <a href="http://www.nationaltireonline.com/" target="_blank">
                               <img src="https://s3-us-west-1.amazonaws.com/assets-big-apple-automotive-inc/NTW.png" alt="National Tire Online" width="100%"></a>
                           </div>
-                          <div class="mdl-cell mdl-cell--media">
+                          <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
                               <a href="https://www.napaprolink.com/login" target="__blank">
                                   <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/napa.png" alt="logo" width="100%"></a>
                               </div>
 
                               <!--AUTOZONE-->
-                              <div class="mdl-cell mdl-cell__media">
+                              <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
                                   <a href="https://www.autozonepro.com/" target="_blank">
                                       <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/autozone.png" alt="logo" width="100%"></a>
                                   </div>
                                   <!--Oreilly First Call-->
-                                  <div class="mdl-cell mdl-cell__media">
+                                  <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
                                       <a href="https://fco.firstcallonline.com/FirstCallOnline" target="__blank">
                                           <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/Oreilly.png" alt="O'reilly" width="100%"></a>
                                       </div>
                                       <!--National Tires-->
-                                      <div class="mdl-cell mdl-cell__media">
+                                      <div class="mdl-cell mdl-cell--media  mdl-shadow--4dp">
                                           <a href="http://www.nationaltireonline.com/" target="_blank">
                                               <img src="https://s3-us-west-1.amazonaws.com/assets-big-apple-automotive-inc/NTW.png" alt="National Tire Online" width="100%"></a>
                                           </div>
 
                                           </div>
-  </div>
+</div>
 <div class="mdl-tabs__panel" id="Tech">
       <!--Vonage-->
       <div class="mdl-cell mdl-cell__media">
@@ -192,22 +195,21 @@ material.purple-indigo.min.css
           </div>
       <!--repairlink https://repairlinkshop.com/Account/Login-->
       <div class="mdl-cell mdl-cell__media">
-              <a href="https://repairlinkshop.com/Account/Login?ReturnUrl=%2f#/2" target="_blank"><img src="https://s3-us-west-1.amazonaws.com/project-big-apple-online/Project+Big+Apple/app/images/repairlink.png" alt="logo" width="100%"></a>
+              <a href="https://repairlinkshop.com/Account/Login?ReturnUrl=%2f#/2" target="_blank">
+                  <img src="https://s3-us-west-1.amazonaws.com/project-big-apple-online/Project+Big+Apple/app/images/repairlink.png" alt="logo" width="100%"></a>
           </div>
       <!--Identifix https://www.identifix.com/?LocationId=13-->
       <div class="mdl-cell mdl-card__media">
-              <a href="https://www.identifix.com/?LocationId=13" target="_blank"><img src="https://s3-us-west-1.amazonaws.com/project-big-apple-online/Project+Big+Apple/app/images/identifix.png" alt="logo" width="100%"></a>
+              <a href="https://www.identifix.com/?LocationId=13" target="_blank">
+                  <img src="https://s3-us-west-1.amazonaws.com/project-big-apple-online/Project+Big+Apple/app/images/identifix.png" alt="logo" width="100%"></a>
           </div>
   </div>
 <div class="mdl-tabs__panel" id="Admin">
 
   </div>
-  <div class="mdl-tabs__tab-bar">
-    <a href="#Sell" class="mdl-tabs__tab is-active">Sell</a>
-    <a href="#Tech" class="mdl-tabs__tab">Tech</a>
-    <a href="#Admin" class="mdl-tabs__tab">Admin</a>
   </div>
   </div>
+
 
                                         <!-- /.mdl-card -->
 
@@ -218,69 +220,48 @@ material.purple-indigo.min.css
 
 
 
-                            <!--           Tab 2             -->
-                            <section class="mdl-layout__tab-panel" id="scroll-tab-2">
-                                <div class="page-content">
-                                    <div class="mdl-grid">
-                                        <!-- Big Apple  -->
-                                        <!--NAPA-->
-                                        <div class="mdl-cell mdl-cell--3-col mdl-shadow--2dp">
-                                            <div class="mdl-card__title">
-                                                <h2 class="mdl-card__title-text">Catalogue</h2>
-                                                <a href="https://www.napaprolink.com/login.aspx?ReturnUrl=%2f" target="_blank"</a>
-                                                </div>
-                                                <div class="mdl-card__media mdl-color--white">
-                                                    <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/napa.png" alt="logo" width="100%">
-                                                </div>
-                                                <div class="mdl-card__actions mdl-card--border">
-                                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="https://www.napaprolink.com/login.aspx?ReturnUrl=%2f" target="_blank">Order</a>
-                                                </div>
-                                            </div>
+                            <!--           Tab 3            -->
+                                        <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+                                            <div class="page-content">
 
-                                            <!--AUTOZONE-->
-                                            <div class="mdl-cell mdl-cell--3-col mdl-shadow--2dp">
+                                                        <div class="mdl-grid">
+                                                            <div class="mdl-cell mdl-cell--10-col mdl-shadow--4dp">
+                                                        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
 
-                                                <div class="mdl-card__title">
-                                                    <h2 class="mdl-card__title-text">Catalogue</h2>
-                                                    <a href="https://www.autozonepro.com/" target="_blank">
-                                                    </div>
-                                                    <div class="mdl-card__media mdl-color--white">
-                                                        <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/autozone.png" alt="logo" width="100%">
-                                                    </div>
-                                                    <div class="mdl-card__actions mdl-card--border">
-                                                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="https://www.autozonepro.com/" target="_blank">Order</a>
-                                                    </div>
+                                                            <div class="mdl-tabs__tab-bar mdl-color--white">
+                                                    <a href="#tire-widget-panel" class="mdl-tabs__tab is-active">Tire Widget</a>
+                                                    <a href="#tww-panel" class="mdl-tabs__tab">TWW</a>
                                                 </div>
+                                                        <div class="mdl-tabs__panel is-active" id="tire-widget-panel">
 
-                                                <!--Oreilly First Call-->
-                                                <div class="mdl-cell mdl-cell--3-col mdl-shadow--2dp">
-                                                    <div class="mdl-card__title">
-                                                        <h2 class="mdl-card__title-text">O'Reilly</h2>
-                                                    </div>
-                                                    <div class="mdl-card__media mdl-color--white">
-                                                        <a href="https://fco.firstcallonline.com/FirstCallOnline" target="__blank"><img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/Oreilly.png" alt="O'reilly" width="100%"></a>
-                                                    </div>
-                                                    <div class="mdl-card__actions mdl-card--border">
-                                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="https://fco.firstcallonline.com/FirstCallOnline" target="_blank">Catalogue</button>
-                                                    </div>
-                                                </div>
-                                                <!--National Tires-->
-                                                <div class="mdl-cell mdl-cell--3-col mdl-shadow--2dp">
-                                                    <div class="mdl-card__title">
-                                                        <h2 class="mdl-card__title-text">National Tire</h2>
-                                                    </div>
-                                                    <div class="mdl-card__media mdl-color--white">
-                                                        <a href="http://www.nationaltireonline.com/" target="_blank"><img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/NTW.png" alt="National Tire Online" width="100%"></a>
-                                                    </div>
-                                                    <div class="mdl-card__actions mdl-card--border">
-                                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="http://www.nationaltireonline.com/" target="_blank">Order</a>
+                                                            <iframe src="http://www.bigappleautomotive.com/shop-for-tires.aspx" height="1400px">
+                                                            </iframe>
                                                         </div>
+
+                                                    <div class="mdl-tabs__panel" id="tww-panel">
+                                                        <iframe src="https://www.twwonline.com//default.aspx?page=Logon" height="1400px"></iframe>
                                                     </div>
-                                                    <div class="mdl-cell--12 mdl-cell--12-col mdl-color--white mdl-card__media mdl-shadow--0dp">
-                                                        <iframe src="http://www.bigappleautomotive.com/home" height="1400">
-                                                        </iframe>
                                                     </div>
-                                                </div>
+                                                </div
+                                            </div>
+                                            <div class="mdl-cell mdl-card mdl-cell--2-col mdl-shadow--4dp">
+                                                <!--NAPA-->
+                                                <div class="mdl-cell--media  mdl-shadow--4dp">
+                                                    <a href="https://www.napaprolink.com/login" target="__blank">
+                                                        <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/napa.png" alt="logo" width="100%"></a>
+                                                    </div>
+                                                    <!--AUTOZONE-->
+                                                    <div class="mdl-cell--media  mdl-shadow--4dp">
+                                                        <a href="https://www.autozonepro.com/" target="_blank">
+                                                            <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/autozone.png" alt="logo" width="100%"></a>
+                                                        </div>
+                                                        <!--Oreilly First Call-->
+                                                        <div class="mdl-cell--media  mdl-shadow--4dp">
+                                                            <a href="https://fco.firstcallonline.com/FirstCallOnline" target="__blank">
+                                                                <img src="https://s3-us-west-1.amazonaws.com/intranet-updates/img/Oreilly.png" alt="O'reilly" width="100%"></a>
+                                                            </div>
+                                        </div>
+                                    </div>
                                             </div>
                                         </section>
                                         <section class="mdl-layout__tab-panel" id="scroll-tab-3">
@@ -296,9 +277,6 @@ material.purple-indigo.min.css
                                             <div class="page-content"><!-- Your content goes here --></div>
                                         </section>
                                         <section class="mdl-layout__tab-panel" id="scroll-tab-5">
-                                            <div class="page-content"><!-- Your content goes here --></div>
-                                        </section>
-                                        <section class="mdl-layout__tab-panel" id="scroll-tab-6">
                                             <div class="page-content">
                                                 <div class="mdl-grid">
                                                     <!--RO Writer Support
